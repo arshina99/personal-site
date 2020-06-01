@@ -149,7 +149,7 @@ nav.w3-navbar {
     outline: 2px solid #45668e;
 }
 .w3-socials a span.fa.fa-instagram:hover {
-    background: #bd081c;
+    background: #e20821;
     color: #fff;
     outline: 2px solid #bd081c;
 }
@@ -199,13 +199,8 @@ nav.w3-navbar {
 	 -moz-background-size: cover;
 	 -o-background-size: cover;
 	 -ms-background-size: cover;
- 
- 
- 
- 
+	
  }
- 
-
 .wthree-dot {
     background: url(../images/dott.png)repeat 0px 0px;
     background-size: 2px;
@@ -833,6 +828,9 @@ ul.address li ul.agileits-address-text li a {
 .gallery-box img{
     max-width: inherit;
 }
+
+
+
 /*--image-zoom--*/
 img.zoom-img {
     transform: scale(1, 1);
@@ -866,6 +864,8 @@ img.zoom-img:hover {
     -o-transition-duration: 750ms;
     overflow: hidden;
 }
+
+
 /*--//image-zoom--*/
 /*--//gallery--*/
 
@@ -1687,6 +1687,11 @@ nav.w3-navbar {
     color: #fff;
     outline: 2px solid #45668e;
 }
+.w3-socials a span.fa.fa-instagram:hover {
+    background: #c00606;
+    color: #fff;
+    outline: 2px solid #dd091b;
+}
 .w3-socials a span.fa.fa-pinterest-p:hover {
     background: #bd081c;
     color: #fff;
@@ -2085,7 +2090,11 @@ h3.text-center {
     font-size: 40px;
     margin-bottom: 1.5em;
     color: rgb(255, 108, 95);
-    text-transform: capitalize;
+	text-transform: capitalize;
+	animation-duration: 1s;
+    animation-name: fadeInLeft;
+    animation-iteration-count:initial;
+	
 }
 .about,.skills-agileinfo,.experience,.gallery,.w3-services{
 	padding:6em 0;
@@ -2174,6 +2183,74 @@ ul.address li ul.agileits-address-text li a {
     color: #fff !important;
     background: #333;
 }
+@-webkit-keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-10px);
+        -moz-transform: translatex(-10px);
+        -o-transform: translatex(-10px);
+        transform: translatex(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+@-moz-keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-10px);
+        -moz-transform: translatex(-10px);
+        -o-transform: translatex(-10px);
+        transform: translatex(-10px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+@keyframes fadeInLeft {
+    from {
+        opacity:0;
+        -webkit-transform: translatex(-100px);
+        -moz-transform: translatex(-100px);
+        -o-transform: translatex(-100px);
+        transform: translatex(-100px);
+    }
+    to {
+        opacity:1;
+        -webkit-transform: translatex(0);
+        -moz-transform: translatex(0);
+        -o-transform: translatex(0);
+        transform: translatex(0);
+    }
+}
+.in-left {
+    -webkit-animation-name: fadeInLeft;
+    -moz-animation-name: fadeInLeft;
+    -o-animation-name: fadeInLeft;
+    animation-name: fadeInLeft;
+    -webkit-animation-fill-mode: both;
+    -moz-animation-fill-mode: both;
+    -o-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -moz-animation-duration: 1s;
+    -o-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    -o-animation-duration:1s;
+    animation-delay: 1s;
+}
+
+
 /*-- //about --*/
 
 /*--services --*/
@@ -2249,7 +2326,7 @@ ul.address li ul.agileits-address-text li a {
 	color: blanchedalmond;
 }
 .stats{
-	background: url(../images/award1.jpg) no-repeat 0px 0px;
+	background:rgba(37, 34, 34, 0.87);
     background-size: cover;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -2317,7 +2394,10 @@ ul.address li ul.agileits-address-text li a {
     font-size: 20px;
     letter-spacing: 2px;
     font-weight: 400;
-    text-transform: uppercase;
+	text-transform: uppercase;
+	animation-duration: 1s;
+        animation-name: fadeInLeft;
+        animation-iteration-count:initial;
 }
 .exp_grid1 h5 {
     font-weight: 800;
@@ -2934,7 +3014,9 @@ img.zoom-img:hover {
 	}
 	.exp_grid1 h4 {
 		font-size: 17px;
+		
 	}
+
 	.exp_grid1 h5 {
 		font-size: 14px;
 	}
@@ -3120,18 +3202,26 @@ img.zoom-img:hover {
 		min-height: 360px;
 	}
 }
+
+.buttonmore{
+	
+	background-color: rgba(37, 30, 30, 0.925);
+	color: rgb(221, 182, 175);
+	border-radius: 15px;
+	
+}
 /*-- //responsive design --*/
 
 
 /*--combining--*/
 .grid11 h3 {
-    color: #146eb4;
+    color: #f7f8f8;
     text-transform: capitalize;
     margin-bottom: .5em;
     font-size: 24px;
 }
 .grid11 h4 {
-    color: #272727;
+    color: #7c7575;
     margin-top: 1em;
     font-size: 20px;
 }
@@ -3164,6 +3254,9 @@ img.zoom-img:hover {
 .educationbottom {
     margin-top: 2em;
 }
+
+
+
 /*--//combining--*/
 
 

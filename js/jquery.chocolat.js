@@ -289,6 +289,9 @@
 			$('#Choco_content').fadeOut(500, function(){$('#Choco_content').remove()});
 			settings.currentImage = 0;
 		}
+
 	
 };
 })(jQuery);
+
+
